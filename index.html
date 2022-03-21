@@ -97,7 +97,7 @@
             download_img1 = function(el) {
                 name = document.getElementById('name').value
                 ctx1.fillText(name + "", 360, 1040);
-                document.getElementById('download').download = name + '.jpg'
+                document.getElementById('download').download = name
 
                 var image = canvas1.toDataURL("image/jpg");
                 el.href = image;
@@ -118,7 +118,7 @@
             download_img2 = function(el) {
                 name = document.getElementById('name').value
                 ctx2.fillText(name + "", 640, 830);
-                document.getElementById('download').download = name + '.jpg'
+                document.getElementById('download').download = name
 
                 var image = canvas2.toDataURL("image/jpg");
                 el.href = image;
@@ -140,7 +140,7 @@
             download_img3 = function(el) {
                 name = document.getElementById('name').value
                 ctx3.fillText(name + "", 960, 815);
-                document.getElementById('download').download = name + '.jpg'
+                document.getElementById('download').download = name
 
                 var image = canvas3.toDataURL("image/jpg");
                 el.href = image;
