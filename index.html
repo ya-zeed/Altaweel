@@ -62,8 +62,8 @@
     </div>
 
     <canvas id="myCanvas" width="720" height="1280" dir="rtl" style="font-family: Adir; text-align: center;" hidden>
-    <canvas id="myCanvas2" width="800" height="567" dir="rtl" style="font-family: Adir; text-align: center;" hidden>
-    <canvas id="myCanvas3" width="800" height="567" dir="rtl" style="font-family: Adir; text-align: center;" hidden>
+    <canvas id="myCanvas2" width="1280" height="908" dir="rtl" style="font-family: Adir; text-align: center;" hidden>
+    <canvas id="myCanvas3" width="1280" height="908" dir="rtl" style="font-family: Adir; text-align: center;" hidden>
     </canvas>
 
 
@@ -111,13 +111,13 @@
             var img = document.getElementById("img2");
             ctx2.drawImage(img, 0, 0);
 
-            ctx2.font = "32px Adir";
+            ctx2.font = "bold 40px Adir";
             ctx2.fillStyle = '#000';
             ctx2.textAlign = 'center'
             console.log(name);
             download_img2 = function(el) {
                 name = document.getElementById('name').value
-                ctx2.fillText(name + "", 400, 520);
+                ctx2.fillText(name + "", 640, 830);
                 document.getElementById('download').download = name + '.jpg'
 
                 var image = canvas2.toDataURL("image/jpg");
@@ -133,13 +133,13 @@
             var img = document.getElementById("img3");
             ctx3.drawImage(img, 0, 0);
 
-            ctx3.font = "32px Adir";
+            ctx3.font = "bold 40px Adir";
             ctx3.fillStyle = '#000';
             ctx3.textAlign = 'center'
             console.log(name);
             download_img3 = function(el) {
                 name = document.getElementById('name').value
-                ctx3.fillText(name + "", 620, 500);
+                ctx3.fillText(name + "", 960, 815);
                 document.getElementById('download').download = name + '.jpg'
 
                 var image = canvas3.toDataURL("image/jpg");
